@@ -1,0 +1,64 @@
+<div class="box1">
+  <div class="row">
+    <div class="col-md-6"><h5 style="text-align: left!important; margin-top: 20px; "><b>Logout</b></h5>
+    </div>
+    <div class="col-md-6"><i style="text-align: right!important; margin-top: 20px; " class="fas fa-arrow-right"></i>
+    </div>
+  </div>
+  <div class="abcd  circle-container">
+    <img src="../../../assets/img/abcd.jpg" alt=" " >
+    <div class="plus-sign">+</div>
+    <h6><b>Anna Morrison</b></h6>
+  <span>Student</span>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-2"><button>B2</button></div>
+    <div class="col-md-3"><p>English <span>High intermediate</span></p></div>
+    <div class="col-md-5">
+      <div class="slider">
+        <!-- <div class="slider-value" ></div> -->
+        <div class="field">
+      <input type="range" min="0" max="100" value="" steps="1" >
+      <!-- <span></span> -->
+      </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-2"><button>C1</button></div>
+    <div class="col-md-3"><p>Spanish <span>Advanced</span></p></div>
+    <div class="col-md-5">
+      <div class="slider">
+        <!-- <div class="slider-value" ></div> -->
+        <div class="field">
+      <input type="range" min="0" max="100" value="" steps="1" >
+      <!-- <span></span> -->
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+    <div class="row remainder">
+      <div class="col-md-6"><h5><b>Reminders</b></h5>
+      </div>
+      <div class="col-md-6" style="text-align: end; "><div class="notification-icon">
+        <i class="fas fa-bell"></i>
+        <span class="notification-dot"></span>
+      </div>
+      </div>
+
+    </div>
+    <div class="row" *ngFor="let item of data">
+      <div class="col-md-3 "><button><i class="fas fa-envelope"></i>
+      </button></div>
+      <div class="col-md-9" style="font-size: 10px;"><p>{{item.title}}<br>{{item.datetime}}</p>
+      </div>
+
+    </div>
+  </div>
+</div>
